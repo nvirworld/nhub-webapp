@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+    <defs>
+        <clipPath id="9lrdfswkta">
+            <path data-name="사각형 768" transform="translate(-.054 -.054)" style="fill:none" d="M0 0h26v26H0z"/>
+        </clipPath>
+    </defs>
+    <g transform="translate(-1612 -5674)">
+        <circle data-name="타원 46" cx="15" cy="15" r="15" transform="translate(1612 5674)" style="fill:#20202a"/>
+        <g data-name="그룹 46">
+            <g data-name="그룹 43" style="clip-path:url(#9lrdfswkta)" transform="translate(1614.054 5676.054)">
+                <path data-name="패스 690" d="M78.3 65.363h-8.033a5.488 5.488 0 0 0-5.487 5.488v8.037a5.487 5.487 0 0 0 5.487 5.487H78.3a5.488 5.488 0 0 0 5.488-5.487v-8.037a5.488 5.488 0 0 0-5.488-5.488m3.737 13.666a3.643 3.643 0 0 1-3.637 3.642h-8.227a3.643 3.643 0 0 1-3.643-3.643V70.8a3.643 3.643 0 0 1 3.643-3.643H78.4a3.643 3.643 0 0 1 3.641 3.643z" transform="translate(-61.34 -61.892)" style="fill:#fff"/>
+                <path data-name="패스 691" d="M155.826 152.365a4.933 4.933 0 1 0 4.933 4.933 4.933 4.933 0 0 0-4.933-4.933m0 8.131a3.2 3.2 0 1 1 3.2-3.2 3.2 3.2 0 0 1-3.2 3.2" transform="translate(-142.88 -144.274)" style="fill:#fff"/>
+                <path data-name="패스 692" d="M319.283 127.192a1.149 1.149 0 1 0 1.149 1.149 1.149 1.149 0 0 0-1.149-1.149" transform="translate(-301.24 -120.438)" style="fill:#fff"/>
+            </g>
+        </g>
+    </g>
+</svg>
