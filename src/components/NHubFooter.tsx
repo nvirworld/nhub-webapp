@@ -1,15 +1,15 @@
-import React from 'react'
-import styled from 'styled-components'
-import * as Shared from './Shared'
-import useResponsiveScr from '../hooks/useResponsiveScr'
-import Href from '../components/href.json'
+import React from "react";
+import styled from "styled-components";
+import * as Shared from "./Shared";
+import useResponsiveScr from "../hooks/useResponsiveScr";
+import Href from "../components/href.json";
 
 interface ContentProps {
-  breakpoint?: 'desktop' | 'tablet' | 'mobile'
+  breakpoint?: "desktop" | "tablet" | "mobile";
 }
 
 const NhubFooter = () => {
-  const { breakpoint } = useResponsiveScr()
+  const { breakpoint } = useResponsiveScr();
   return (
     <Footer.Container>
       <Footer.Content breakpoint={breakpoint}>
@@ -23,7 +23,7 @@ const NhubFooter = () => {
             </Footer.Reserve>
           </Footer.NvirWorld>
           <Footer.IconGroup>
-            <Footer.FamilySite>
+            {/* <Footer.FamilySite>
               <Shared.NhubTypo type="bold" usage="footer">
                 Family Site
               </Shared.NhubTypo>
@@ -37,31 +37,52 @@ const NhubFooter = () => {
                   NvirWorld
                 </Shared.NhubTypo>
               </a>
-            </Footer.FamilySite>
-            <Shared.NhubIcon.DiscordIcon lg={{ w: 30, h: 30 }} href={Href.Discord} />
+            </Footer.FamilySite> */}
+            {/* <Shared.NhubIcon.DiscordIcon
+              lg={{ w: 30, h: 30 }}
+              href={Href.Discord}
+            /> */}
             <Shared.NhubIcon.XIcon lg={{ w: 30, h: 30 }} href={Href.X} />
-            <Shared.NhubIcon.TelegramIcon lg={{ w: 30, h: 30 }} href={Href.Telegram_Global} />
-            <Shared.NhubIcon.YoutubeIcon lg={{ w: 30, h: 30 }} href={Href.Youtube}/>
-            <Shared.NhubIcon.MediumIcon lg={{ w: 30, h: 30 }} href={Href.Medium} />
+            <Shared.NhubIcon.TelegramIcon
+              lg={{ w: 30, h: 30 }}
+              href={Href.Telegram_Global}
+            />
+            <Shared.NhubIcon.TelegramIcon
+              lg={{ w: 30, h: 30 }}
+              href={Href.Telegram_Notice}
+            />
+            <Shared.NhubIcon.YoutubeIcon
+              lg={{ w: 30, h: 30 }}
+              href={Href.Youtube}
+            />
+            <Shared.NhubIcon.MediumIcon
+              lg={{ w: 30, h: 30 }}
+              href={Href.Medium}
+            />
           </Footer.IconGroup>
         </Footer.Wrap>
       </Footer.Content>
     </Footer.Container>
-  )
-}
+  );
+};
 
-export default NhubFooter
+export default NhubFooter;
 
 const Footer = {
   Container: styled.footer`
     width: 100%;
     height: 80px;
-    display: ${(props) => (props.theme.breakpoint === 'mobile' ? 'none' : 'flex')};
+    display: ${(props) =>
+      props.theme.breakpoint === "mobile" ? "none" : "flex"};
     justify-content: center;
   `,
   Content: styled.div<ContentProps>`
     width: ${(props) =>
-      props.breakpoint === 'desktop' ? '1364px' : props.breakpoint === 'tablet' ? '608px' : '286px;'};
+      props.breakpoint === "desktop"
+        ? "1364px"
+        : props.breakpoint === "tablet"
+        ? "608px"
+        : "286px;"};
     height: 100%;
     display: flex;
     justify-content: center;
@@ -74,15 +95,18 @@ const Footer = {
     justify-content: space-between;
   `,
   NvirWorld: styled.div`
-    display: ${(props) => (props.theme.breakpoint === 'desktop' ? 'flex' : 'inline-grid')};
+    display: ${(props) =>
+      props.theme.breakpoint === "desktop" ? "flex" : "inline-grid"};
     align-items: center;
     align-content: center;
   `,
   Reserve: styled.div`
-    margin-left: ${(props) => (props.theme.breakpoint === 'desktop' ? '16px' : '0')};
+    margin-left: ${(props) =>
+      props.theme.breakpoint === "desktop" ? "16px" : "0"};
   `,
   FamilySite: styled.div`
-    display: ${(props) => (props.theme.breakpoint === 'desktop' ? 'flex' : 'none')};
+    display: ${(props) =>
+      props.theme.breakpoint === "desktop" ? "flex" : "none"};
     align-items: center;
     gap: 10px;
     margin-right: 10px;
@@ -97,5 +121,5 @@ const Footer = {
       display: flex;
       align-items: center;
     }
-  `
-}
+  `,
+};
